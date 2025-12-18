@@ -28,6 +28,7 @@ async function run() {
     await client.connect();
    const database = client.db("myReviews");       // database name
     const reviewCollection = database.collection("myReviews"); // collection name
+    const scholarshipCollection = database.collection("universities"); //collection name
 
     // ✅ GET all reviews
     app.get("/myReview", async (req, res) => {
